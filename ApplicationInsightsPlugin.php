@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Application Insights
-Version: 2.3
 Description: Integrates a WordPress site with Microsoft Application Insights.
-Author: ApplicationInsights - Mahiz
+Version: 2.3
+Author: ApplicationInsights
 License:  MIT
  */
 

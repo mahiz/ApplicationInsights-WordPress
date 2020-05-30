@@ -49,14 +49,11 @@ See instructions here: https://developer.wordpress.org/plugins/wordpress-org/how
 ```
 svn co https://plugins.svn.wordpress.org/application-insights application-insights
 cd application-insights/
-rm -rf trunk/
-mkdir trunk
-cp -r ../../wordpress/ trunk/
+rsync -r -a --delete -v ../../wordpress/ trunk
 cd trunk/
-rm -rf .gitignore 
-rm -rf .gitattributes
-rm -rf .git
-svn add trunk/*
+svn cleanup .
+svn update
+svn status
 svn ci -m "updated to the latest version" --username ApplicationInsights --password ""
 ```
 
